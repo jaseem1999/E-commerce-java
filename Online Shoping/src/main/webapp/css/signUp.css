@@ -1,0 +1,70 @@
+@charset "ISO-8859-1";
+
+.bdy{
+	background-image: url("../img/back1.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#clr{
+	background-color: #18151557;
+}
+
+.card{
+	width: 800px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-3{
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.btn{
+	width: 50%;
+	margin-bottom: 20px;
+}
+#center{
+	text-align: center;
+}
+.form-label{
+	color: #f5f5f5;
+}
+#emailHelp{
+	color: #d0f1be;
+}
+#signH{
+	background-color: #20242175;
+}
+.card-body{
+	margin-top: 10px;
+}
+.card-title{
+	font-family: Impact, fantasy;
+	font-variant: small-caps;
+	color: white;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nameShop{
+	font-family: Impact, fantasy;
+	font-variant: small-caps;
+	color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.card-text{
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	color: white;
+}
+.alert{
+	font-family: Times, Times New Roman, serif;
+}
+.error{
+	color: red;
+}

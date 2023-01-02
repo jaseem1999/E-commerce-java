@@ -1,0 +1,79 @@
+@charset "ISO-8859-1";
+body{
+	background-image: url("https://images.alphacoders.com/780/780167.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+.justify-content-end{
+	background-color: #9086863d;
+	color: white;
+}
+.nav-item a{
+	color: white;
+	font-weight: bold;
+}
+.nav-item a:hover{
+	color: turquoise;
+	font-weight: bold;
+}
+.nav-item span{
+	background-color: #3c59e2;
+	padding: 5px;
+	margin: 5px;
+	width: auto;
+	height: auto;
+	border: 1px solid blue;
+    font-size: 10px;
+    border-radius: 25px;
+}
+.nav-item span:hover{
+	color: white; 
+}
+.Headig{
+	margin-top: -30px;
+	color: white;
+	margin-left: 40px;
+	font-family: Impact, fantasy;
+}
+.log img{
+	width : 30px;
+	margin-top: -50px;
+}
+.title{
+	width: 300px;
+	margin-left: 15px;
+}
+.card{
+	color : white;
+	width: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: 2px solid white; 
+}
+#cardId{
+	background-color: #11101080;
+	border: 1px solid white;
+}
+.Cart{
+	width: 98%;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.CartN{
+	width : 200px;
+
+}
+.CartD{
+	width : 500px;
+
+}
+.Cartimg{
+	
+	width : 100px;
+}

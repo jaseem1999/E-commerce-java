@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body{
+	background-image: url("https://images.alphacoders.com/780/780167.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-attachment: fixed;
+}
+#Profile{
+	background-color: #fff99d5e;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 120px;
+    width: auto;
+    height: auto;
+    color: white;
+    box-shadow: 0px 0px 50px 50px #9c9b81bf;
+}
+
+.justify-content-end{
+	background-color: #9086863d;
+	color: white;
+}
+.nav-item a{
+	color: white;
+	font-weight: bold;
+}
+.nav-item a:hover{
+	color: turquoise;
+	font-weight: bold;
+}
+.nav-item span{
+	background-color: #3c59e2;
+	padding: 5px;
+	margin: 5px;
+	width: auto;
+	height: auto;
+	border: 1px solid blue;
+    font-size: 10px;
+    border-radius: 25px;
+}
+.nav-item span:hover{
+	color: white; 
+}
+.Headig{
+	margin-top: -30px;
+	color: white;
+	margin-left: 40px;
+	font-family: Impact, fantasy;
+}
+.log img{
+	width : 30px;
+	margin-top: -50px;
+}
+.card{
+	margin:10px;
+}
+
+.card-title{
+	width: 100%;
+    border: 1px solid #e0cccc;
+    color: #d8d6d1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #2a25253b;
+}
+span{
+	text-transform: uppercase;
+}
+img{
+	width: 100px;
+}
+#logImg{
+	text-align: center;
+    margin-bottom: 30px;
+    margin-top: -70px;
+}
+.card-text{
+	width: 100%;
+    border: 1px solid #e0cccc;
+    color: #d8d6d1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #2a25253b;
+}
