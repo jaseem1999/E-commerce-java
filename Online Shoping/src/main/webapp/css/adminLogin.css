@@ -1,0 +1,40 @@
+@charset "ISO-8859-1";
+
+.stylebody{
+	background-image: url("https://images.alphacoders.com/780/780167.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-attachment: fixed;
+	color:white;
+}
+.card{
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+#log{
+	background-color: #e8e4e4d1;
+    border: 1px solid white;
+    box-shadow: 0px 0px 50px white;
+}
+.form-group{
+	margin: 20px;
+}
+.btn{
+	margin-bottom: 20px;
+	margin-left: 20px;
+	width: 50%;
+}
+#center{
+	text-align: center;
+}
+.form-label{
+	color: #fff;;
+	font-weight: bold;
+}
+.text-muted1 {
+	--bs-text-opacity: 1;
+    color: #0dcaf0!important;
+}

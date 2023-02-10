@@ -17,7 +17,6 @@ int id = (Integer) session.getAttribute("id");
 </head>
 <body>
 <ul class="nav justify-content-end">
-
   <li class="nav-item">
     <a class="nav-link active" href="Home.jsp">
     	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
