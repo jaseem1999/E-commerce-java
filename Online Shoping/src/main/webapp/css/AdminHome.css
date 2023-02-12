@@ -33,6 +33,19 @@ body{
 .nav-item span:hover{
 	color: white; 
 }
+#box{
+	height: 500px;
+	border: 2px solid white;
+	overflow-x: hidden;
+    overflow-y: scroll;
+	
+}
+#tableOrder{
+	height: 438px;
+	border: 2px solid white;
+	overflow-x: hidden;
+    overflow-y: scroll;
+}
 #mainItems{
 	width: 300px;
 }
@@ -53,4 +66,10 @@ body{
 }
 img{
 	width: 70px;
+}
+.form-group{
+	margin: 20px;
+}
+#cardID{
+	margin-bottom: 20px;
 }

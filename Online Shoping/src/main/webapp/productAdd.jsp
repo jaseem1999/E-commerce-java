@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.DriverManager"%>
@@ -7,13 +9,11 @@
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.sql.Array"%>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin Home</title>
+<title>Add Product</title>
 <link  rel="stylesheet" href="./css/AdminHome.css" >
 </head>
 <body>
@@ -95,6 +95,13 @@ try{
 	
 }
 %>
+	
+<%
+
+
+
+
+%>
 <ul class="nav justify-content-end">
 
   <li class="nav-item">
@@ -129,8 +136,8 @@ try{
   <a href="#" class="list-group-item list-group-item-secondary">Managing items</a>
 
 
-  <a href="AdminHome.jsp" class="list-group-item list-group-item-action list-group-item-action active">Home</a>
-  <a href="productAdd.jsp" class="list-group-item list-group-item-action list-group-item">Add Product</a>
+  <a href="AdminHome.jsp" class="list-group-item list-group-item-action list-group-item ">Home</a>
+  <a href="productAdd.jsp" class="list-group-item list-group-item-action list-group-item-action active">Add Product</a>
   <a href="OrderDetails.jsp" class="list-group-item list-group-item-action list-group-item">Show Orders</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item">A simple danger list group item</a>
   <a href="#" class="list-group-item list-group-item-action list-group-item">A simple warning list group item</a>
@@ -139,37 +146,36 @@ try{
   <a href="#" class="list-group-item list-group-item-action list-group-item">A simple dark list group item</a>
 </div>
 </div>
-<div class="col-md" id="box">
-<figure class="text-center">
-  <h1 class="Display 6" style="color : white;">Product</h1>
-</figure>
-<%
-int count = 0;
-response.setContentType("text/html");
-List<Product> p = ProductDAO.proDetails();
-%>
-<% for(Product d:p){ %>
-<ul class="list-unstyled">
-<%count++; %>
-  <li class="media">
-  
-    <img class="mr-3" src="<%=d.getImg() %>" alt="Generic placeholder image">
-    <div class="media-body">
-      <h5 class="mt-0 mb-1"><%=d.getName() %></h5>
-      <%=d.getDes() %>
-    </div>
-  </li>
-
-</ul>
- <%} %>	
+<div class="col-md">
+	
+	<form action="productSql.jsp" method="post" class="card" id="cardID">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Enter Product Name</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Product Name" name="p-name">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Image Link</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Past image link" name="p-img"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea2">Image Link</label>
+    <textarea class="form-control" id="exampleFormControlTextarea2" rows="3" placeholder="Enter Product Description" name="p-desc"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput2">Enter Product Price</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Product price" name="p-price">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput3">Enter Product Offer</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Product Offer" name="p-offer">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+	
 </div>
 
 <div class="col-sm-3" id="info">
 <ul class="list-group" >
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    No. Product 
-    <span class="badge badge-primary badge-pill"><%=count %></span>
-  </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
     No. Customers
     <span class="badge badge-primary badge-pill"><%=coUser %></span>
@@ -184,5 +190,6 @@ List<Product> p = ProductDAO.proDetails();
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </body>
 </html>
