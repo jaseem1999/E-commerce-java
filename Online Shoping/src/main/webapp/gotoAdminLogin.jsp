@@ -42,6 +42,8 @@ String pass = request.getParameter("pass");
 	}
 	if(status > 0){
 		response.sendRedirect("AdminHome.jsp");
+		session.setAttribute("aname", sname);
+		session.setAttribute("aemail", smail);
 	}else{
 		response.sendRedirect("AdminLoginFailed.jsp");
 	}

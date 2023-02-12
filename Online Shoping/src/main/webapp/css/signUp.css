@@ -7,13 +7,14 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
 #clr{
 	background-color: #18151557;
 }
 
 .card{
 	width: 800px;
-    margin-top: 40px;
+    margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -25,6 +26,21 @@
 .btn{
 	width: 50%;
 	margin-bottom: 20px;
+}
+.btnA{
+	width: 150px;
+    height: auto;
+    border: 1px solid #0d6efd;
+    background: #0d6efd;
+    margin-left: 10px;
+    margin-top: 5px;
+    /* text-decoration: none; */
+    border-radius: 5px;
+}
+.btnA a{
+	color: #fff;
+	text-align: center;
+	margin-left: 29px;
 }
 #center{
 	text-align: center;
@@ -68,3 +84,4 @@
 .error{
 	color: red;
 }
+
